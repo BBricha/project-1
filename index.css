@@ -1,0 +1,6 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(17, 3em);
+  grid-template-rows: repeat(17, 3em);
+  }
+  
