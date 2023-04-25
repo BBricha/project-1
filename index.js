@@ -1,6 +1,6 @@
 
 /*
-class TodoList {
+class Toplay {
     
     constructor() {
       this.items = []
@@ -8,7 +8,7 @@ class TodoList {
 
 
     render() {
-        const list = document.getElementById('todo-list')
+        const player = document.getElementById('todo-list')
         list.innerHTML = '';
         this.items.forEach((item, index) => {
             const li = document.createElement('li');
@@ -22,7 +22,7 @@ class TodoList {
         this.items.splice(index, 1);
         this.render()
       }
-    add(item) {
+    add(players) {
       this.items.push(item);
       this.render()
     }

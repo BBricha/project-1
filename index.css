@@ -1,6 +1,70 @@
-.board {
+body {
   display: grid;
-  grid-template-columns: repeat(17, 3em);
-  grid-template-rows: repeat(17, 3em);
-  }
-  
+  justify-items: center;
+}
+.board {
+
+  display: grid;
+  grid-template-columns: 30px 30px 30px 30px 30px 30px 30px 60px 50px 60px 30px 30px 30px 30px 30px 30px 30px;
+  grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 60px 50px 60px 30px 30px 30px 30px 30px 30px 30px;
+  background-color: whitesmoke;
+  border: 6px solid rgb(212, 141, 8);
+}
+.board #home_img * {
+  width: 210px;
+  height: 210px;
+}
+
+
+.board .red_img:nth-child(1) {
+  grid-row: 11 ;
+  grid-column: 1 ;
+}
+.board .yellow_img:nth-child(2) {
+  grid-row: 1 ;
+  grid-column: 11 ;
+}
+.board .green_img:nth-child(3) {
+  grid-row: 1 ;
+  grid-column: 1 ;
+}
+.board .blue_img:nth-child(4) {
+  grid-row: 11  ;
+  grid-column: 11 ;
+}
+
+/* this are first and second red pawns */ 
+.board .first_red_pawn img{
+  width: 30px;
+  height: 37px;
+}
+.board .second_red_pawn img{
+  width: 30px;
+  height: 37px;
+}
+          
+.board .first_red_pawn:nth-child(5){
+  grid-row: 14  ;
+  grid-column: 3 ;
+}
+.board .second_red_pawn:nth-child(6){
+  grid-row: 14  ;
+  grid-column: 5 ;
+}
+/* this are first and second yellow pawns */ 
+.board .first_yellow_pawn img{
+  width: 30px;
+  height: 37px;
+}
+.board .second_yellow_pawn img{
+  width: 30px;
+  height: 37px;
+}
+.board .first_yellow_pawn:nth-child(7) {
+  grid-row: 4  ;
+  grid-column: 13 ;
+}
+.board .second_yellow_pawn:nth-child(8) {
+  grid-row: 4  ;
+  grid-column: 15 ;
+}
