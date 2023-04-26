@@ -1,4 +1,4 @@
-body {
+body  {
   display: grid;
   justify-items: center;
 }
@@ -9,28 +9,45 @@ body {
   grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 60px 50px 60px 30px 30px 30px 30px 30px 30px 30px;
   background-color: whitesmoke;
   border: 6px solid rgb(212, 141, 8);
+
 }
 .board #home_img * {
-  width: 210px;
-  height: 210px;
+  width: 204px;
+  height: 206px;
 }
 
 
 .board .red_img:nth-child(1) {
   grid-row: 11 ;
   grid-column: 1 ;
+  background-color: #ff00006b;
+  width: 206px;
+  height: 206px;
+  border: 3px solid rgb(31, 31, 0);
 }
 .board .yellow_img:nth-child(2) {
   grid-row: 1 ;
   grid-column: 11 ;
+  background-color: #e7e4286b;
+  width: 206px;
+  height: 206px;
+  border: 3px solid rgb(31, 31, 0);
 }
 .board .green_img:nth-child(3) {
   grid-row: 1 ;
   grid-column: 1 ;
+  background-color: #48ca5a6b;
+  width: 206px;
+  height: 206px;
+  border: 3px solid rgb(31, 31, 0);
 }
 .board .blue_img:nth-child(4) {
   grid-row: 11  ;
   grid-column: 11 ;
+  background-color: #2853dd6b;
+  width: 206px;
+  height: 206px;
+  border: 3px solid rgb(31, 31, 0);
 }
 
 /* this are first and second red pawns */ 
@@ -41,16 +58,16 @@ body {
 .board .second_red_pawn img{
   width: 30px;
   height: 37px;
-}
-          
+}      
 .board .first_red_pawn:nth-child(5){
-  grid-row: 14  ;
-  grid-column: 3 ;
+  grid-row: 14;
+  grid-column: 5 ;
 }
 .board .second_red_pawn:nth-child(6){
   grid-row: 14  ;
-  grid-column: 5 ;
+  grid-column: 3 ;
 }
+
 /* this are first and second yellow pawns */ 
 .board .first_yellow_pawn img{
   width: 30px;
@@ -68,3 +85,15 @@ body {
   grid-row: 4  ;
   grid-column: 15 ;
 }
+/*
+#first_button {
+  background-image: url('assests/dice_img.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 60px;
+  color: rgb(31, 31, 0);
+  font-size: large;
+
+}
+*/

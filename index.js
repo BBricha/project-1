@@ -1,48 +1,55 @@
 
+const first_red_pawn = document.querySelector('.board .first_red_pawn:nth-child(5)')
+first_red_pawn.style.gridRow = "";
+first_red_pawn.style.gridColumn = "";
+
+// const second_red_pawn = document.querySelector('.board .second_red_pawn:nth-child(6)')
+// second_red_pawn.style.gridRow = "";
+// second_red_pawn.style.gridColumn = "";
+
+ const first_yellow_pawn = document.querySelector('.board .first_yellow_pawn:nth-child(7)')
+first_yellow_pawn.style.gridRow = "";
+first_yellow_pawn.style.gridColumn = "";
+
+// const second_yellow_pawn = document.querySelector('.board .second_yellow_pawn:nth-child(8)')
+// second_yellow_pawn.style.gridRow = "";
+// second_yellow_pawn.style.gridColumn = "";
+
+
+
+const yellow_button = document.getElementById('yellow_button')
+yellow_button.addEventListener('click', yellow_dice_rolled = () => {
+
+  dice_number = Math.floor(Math.random() * 7)
+  if ( dice_number > 0 && dice_number == 5){
+      first_yellow_pawn.style.gridRow = "8";   
+  }
+  console.log(dice_number);
+})
+
+
+const red_button = document.getElementById('red_button')
+red_button.addEventListener('click', red_dice_rolled = () => {
+    dice_number = Math.floor(Math.random() * 7)
+    if ( dice_number > 0 && dice_number == 5){
+        first_red_pawn.style.gridRow = "10";  
+
+    }
+
+    console.log(dice_number);
+    })
+  
+
+
+
+
+
+
 /*
 class Toplay {
     
     constructor() {
-      this.items = []
+      this.red_pawn = []
     }
-
-
-    render() {
-        const player = document.getElementById('todo-list')
-        list.innerHTML = '';
-        this.items.forEach((item, index) => {
-            const li = document.createElement('li');
-            li.textContent = item;
-            li.addEventListener('click', () => {
-                this.delete(index)})
-            list.appendChild(li)
-        })
-    }   
-    delete(index) {
-        this.items.splice(index, 1);
-        this.render()
-      }
-    add(players) {
-      this.items.push(item);
-      this.render()
-    }
-  
-   
 }
-  
-const todoList = new TodoList()
-  
-const form = document.querySelector('form')
-const input = document.getElementById('todo-input')
-const button = document.getElementById('todo-button')
-  
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const value = input.value.trim()
-    if (value !== '') {
-      todoList.add(value);
-      input.value = ''
-    }
-})
-  
 */
