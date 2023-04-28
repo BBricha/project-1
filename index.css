@@ -2,6 +2,7 @@ body  {
   display: grid;
   justify-items: center;
 }
+
 .board {
 
   display: grid;
@@ -85,15 +86,31 @@ body  {
   grid-row: 4  ;
   grid-column: 15 ;
 }
-/*
-#first_button {
-  background-image: url('assests/dice_img.jpg');
-  background-size: cover;
-  background-position: center;
-  width: 100px;
-  height: 60px;
-  color: rgb(31, 31, 0);
-  font-size: large;
 
+
+#yellow_button {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
-*/
+#red_button {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(360deg);
+}
