@@ -98,6 +98,7 @@ body  {
   font-size: 19px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+  margin-left: 500px;
 }
 #red_button {
   width: 100px;
@@ -109,6 +110,7 @@ body  {
   font-size: 19px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+  margin-right: 500px;
 }
 
 .rotate {
